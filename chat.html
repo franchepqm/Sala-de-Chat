@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="comunidad.css">    
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="OpenSans.ttf">
+    <title></title>
+    <script type="module" src="firebaseconect.js"></script>
+    <script type="module" src="comunidad.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="btn-menu">
+            <label for="btn-menu" class="icon-menu"></label>
+        </div> 
+    </header>
+    <div class="capa"></div>
+    <input type="checkbox" id="btn-menu">
+    <div class="directorio-menu">
+        <div class="dire-menu">
+            <nav>
+                <a href="panelpaciente.html">Inicio</a>
+                <a href="cuentapaciente.html">Cuenta</a>
+                <a href="panelpaciente.html">Mi Actividad</a>
+                <label for="btn-menu" id="cancel">✖️</label>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div id="chat-form">
+            <div id="chat-messages"></div>
+            <div id="user-input-container">
+                <div class="imagen-perfil-container">
+                    <img src="usericon.png" alt="Imagen de perfil" id="imagenPerfil" class="perfil-icon">
+                </div>
+                <input type="text" id="message-input" placeholder="Escribe tu mensaje">
+            </div>    
+            <button id="send-button">Enviar</button>
+        </div>
+    </main>
+    <div class="modal">
+        <div class="modal-content">
+            <div id="grupoicon">
+                <img src="comunidadgroup.png" alt="Icono de usuario" id="userIcon" class="user-icon">
+            </div>
+            <p>Envíale un mensaje privado a: <span id="userName"></span></p>
+            <input type="text" id="userInput">
+            <button class="buttons" id="sendButton">Enviar</button>
+            <button class="buttons" id="reportButton">Reportar Usuario</button>
+        </div>
+    </div>
+</body>
+</html>
